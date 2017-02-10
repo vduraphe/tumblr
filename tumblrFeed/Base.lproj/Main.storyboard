@@ -14,36 +14,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="351" sectionHeaderHeight="28" sectionFooterHeight="28" id="boM-bl-RVD">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="367" sectionHeaderHeight="28" sectionFooterHeight="28" id="boM-bl-RVD">
                                 <frame key="frameInset" width="375" height="657"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="351" id="uQ0-ov-UeK" customClass="PhotoCell" customModule="tumblrFeed" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="351"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="367" id="uQ0-ov-UeK" customClass="PhotoCell" customModule="tumblrFeed" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="367"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uQ0-ov-UeK" id="zLP-jq-bQr">
-                                            <frame key="frameInset" width="375" height="350"/>
+                                            <frame key="frameInset" width="308" height="366"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ban-5C-JOk">
                                                     <frame key="frameInset" minX="35" minY="237" width="305" height="81"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="LN0-py-ZuY">
-                                                    <frame key="frameInset" minX="8" minY="8" width="359" height="207"/>
+                                                    <frame key="frameInset" width="375" height="221"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="photoImageView" destination="LN0-py-ZuY" id="eNn-5R-cN0"/>
+                                            <outlet property="photoImageView" destination="LN0-py-ZuY" id="DMZ-pW-b5M"/>
                                             <outlet property="summaryLabel" destination="ban-5C-JOk" id="pZI-7x-eci"/>
                                             <outlet property="titleLabel" destination="ban-5C-JOk" id="HpC-z6-6zM"/>
+                                            <segue destination="vz4-Uj-YhN" kind="push" id="qGH-eN-8Pj"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -59,6 +60,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="672.5" y="154.5"/>
+        </scene>
+        <!--Photo Details View Controller-->
+        <scene sceneID="Dam-ZH-auB">
+            <objects>
+                <viewController id="vz4-Uj-YhN" customClass="PhotoDetailsViewController" customModule="tumblrFeed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gIA-hf-yFI" customClass="PhotoDetail">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="ouk-Z0-sXq">
+                                <frame key="frameInset" minY="-20" width="375" height="1011"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" id="EoB-uw-QrY">
+                                        <rect key="frame" x="0.0" y="277" width="375" height="825"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UfQ-P6-QO5">
+                                                <frame key="frameInset" minX="31" minY="37" width="313" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="ugK-3c-M1j">
+                                        <rect key="frame" x="0.0" y="25" width="375" height="258"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5zy-kt-zNO"/>
+                    <connections>
+                        <outlet property="contentLabel" destination="UfQ-P6-QO5" id="9HF-nf-EHV"/>
+                        <outlet property="infoView" destination="EoB-uw-QrY" id="eY3-tc-YNb"/>
+                        <outlet property="myImageView" destination="ugK-3c-M1j" id="GFA-Wh-bRl"/>
+                        <outlet property="scrollView" destination="ouk-Z0-sXq" id="DhG-ub-ku6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UgH-aL-FYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1146.5" y="154.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mgu-aC-DvT">

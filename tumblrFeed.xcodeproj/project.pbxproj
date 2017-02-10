@@ -13,6 +13,7 @@
 		F82693161E42A25D00E11DDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82693141E42A25D00E11DDB /* Main.storyboard */; };
 		F82693181E42A25D00E11DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82693171E42A25D00E11DDB /* Assets.xcassets */; };
 		F826931B1E42A25D00E11DDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82693191E42A25D00E11DDB /* LaunchScreen.storyboard */; };
+		F8475C591E4BDC77009925A6 /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8475C581E4BDC77009925A6 /* PhotoDetailsViewController.swift */; };
 		F88984501E42A75E00811314 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889844F1E42A75E00811314 /* PhotoCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		F82693171E42A25D00E11DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F826931A1E42A25D00E11DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F826931C1E42A25D00E11DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8475C581E4BDC77009925A6 /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
 		F889844F1E42A75E00811314 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 			children = (
 				F82693101E42A25D00E11DDB /* AppDelegate.swift */,
 				F82693141E42A25D00E11DDB /* Main.storyboard */,
+				F8475C581E4BDC77009925A6 /* PhotoDetailsViewController.swift */,
 				F889844F1E42A75E00811314 /* PhotoCell.swift */,
 				F82693171E42A25D00E11DDB /* Assets.xcassets */,
 				F82693191E42A25D00E11DDB /* LaunchScreen.storyboard */,
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8475C591E4BDC77009925A6 /* PhotoDetailsViewController.swift in Sources */,
 				F82693111E42A25D00E11DDB /* AppDelegate.swift in Sources */,
 				F88984501E42A75E00811314 /* PhotoCell.swift in Sources */,
 				F81F26D91E42A4C40075A3FD /* PhotosViewController.swift in Sources */,

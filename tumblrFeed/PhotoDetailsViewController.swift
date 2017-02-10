@@ -9,15 +9,33 @@
 import UIKit
 
 class PhotoDetailsViewController: UIViewController {
+    
+    
+    @IBOutlet weak var contentLabel: UILabel!
+   
+   
+    @IBOutlet weak var infoView: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
 
+    public var imageURL: URL!
+    public var quote: String!
+    
+    @IBOutlet weak var myImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //myImageView.setImageWith(imageUrl)
         // Do any additional setup after loading the view.
+        scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height: infoView.frame.origin.y + infoView.frame.size.height)
+        contentLabel.text = quote
+        let str = contentLabel.text?.replacingOccurrences(of: "[^>]+", with: "")
+        print(str)
+        contentLabel.sizeToFit()
+        myImageView.setImageWith(imageURL!)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
     
