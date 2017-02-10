@@ -4,7 +4,7 @@ Submitted by: **Vaidehi Duraphe and Rohan Trivedi**
 
 Here's a walkthrough of implemented user stories:
 
-<img src= "http://imgur.com/neI2K9Z" Walkthrough' width='' alt='Video Walkthrough' />
+<img src= "http://imgur.com/neI2K9Z.gif" Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
